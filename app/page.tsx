@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs'
 import ClientHero from '@/components/ClientHero'
 import  Navbar from '@/components/Header'
 import Youtube from '@/components/Youtube'
@@ -9,6 +10,7 @@ function Home() {
    <>
    <Navbar />
    <ClientHero />
+   <AboutUs />
    <Youtube />
    </>
   )
