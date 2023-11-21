@@ -11,9 +11,9 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import dynamic from "next/dynamic";
 
-
-export function Header() {
+function Navbar() {
     const router = useRouter();
     const { setTheme, theme, resolvedTheme } = useTheme();  
 
@@ -56,3 +56,5 @@ export function Header() {
         </div>
     );
 }
+
+export default dynamic (() => Promise.resolve(Navbar), {ssr: false})

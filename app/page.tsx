@@ -1,12 +1,18 @@
 import ClientHero from '@/components/ClientHero'
-import { Header } from '@/components/Header'
+import  Navbar from '@/components/Header'
+import Youtube from '@/components/Youtube'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 
-export default function Home() {
+function Home() {
   return (
    <>
-   <Header />
+   <Navbar />
    <ClientHero />
+   <Youtube />
    </>
   )
 }
+
+export default dynamic (() => Promise.resolve(Home), {ssr: false})
+

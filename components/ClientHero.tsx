@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Confetti from "react-dom-confetti";
 import { useTheme } from "next-themes";
-export default function ClientHero () {
+import dynamic from "next/dynamic";
+
+function ClientHero () {
   const [isConfettiActive, setIsConfettiActive] = useState(false);
   const { theme } = useTheme();  
 
@@ -74,3 +76,5 @@ export default function ClientHero () {
   );
 
 }
+
+export default dynamic (() => Promise.resolve(ClientHero), {ssr: false})
