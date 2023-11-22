@@ -1,12 +1,12 @@
 import AboutUs from '@/components/AboutUs'
 import ClientHero from '@/components/ClientHero'
-import  Navbar from '@/components/Header'
+import Footer from '@/components/Footer'
 import Pricing from '@/components/Pricing'
 import Subscribe from '@/components/Subscribe'
 import Testimonials from '@/components/Testimonials'
 import Youtube from '@/components/Youtube'
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
+
 
 function Home() {
   return (
@@ -18,6 +18,7 @@ function Home() {
    <Pricing />
    <Subscribe />
    <Youtube />
+   <Footer />
    </>
   )
 }
