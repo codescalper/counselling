@@ -57,8 +57,8 @@
       <div data-aos="fade-up"  className="container mx-auto px-4 py-8">
         <div className="logo-container" style={{ overflowX: "scroll", scrollBehavior: "smooth", scrollSnapType: "x mandatory" }}>
           {videos.map((video) => (
-            <div className="logo" style={{ scrollSnapAlign: "center" }} key={video.id}>
-              <Card className="max-w-sm mx-auto">
+            <div  className="logo" style={{ scrollSnapAlign: "center" }} key={Math.random()}>
+              <Card className="max-w-sm lg:max-w-sm md:max-w-md sm:max-w-lg mx-auto lg:flex md:flex-col sm:flex-row"  style={{pointerEvents: "none"}}>
                 <CardHeader>
                   <CardTitle>{video.snippet.title}</CardTitle>
                 </CardHeader>
@@ -70,6 +70,7 @@
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
+                      style={{pointerEvents: "auto"}}
                     ></iframe>
                   </div>
                 </CardContent>
@@ -86,7 +87,7 @@
         transform: translateX(0);
       }
       100% {
-        transform: translateX(calc(-100% * ${videos.length/2}));
+        transform: translateX(calc(-100% * ${videos.length}));
       }
     }
 

@@ -13,7 +13,7 @@ const Subscribe = () => {
       </div>
       <div className="mt-10 sm:mt-4 md:mt-0">
         <a href="https://www.youtube.com/@mhtcetshalamayanksingh" target="blank">
-          <Button data-aos="fade-left" size='lg' className="bg-rose-600 text-white-900 text-lg">
+          <Button data-aos="fade-left" size='lg' className="bg-rose-600 text-white text-lg">
             <FaYoutube size={24} />&nbsp; Subscribe on Youtube
           </Button>
         </a>

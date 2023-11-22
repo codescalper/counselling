@@ -22,11 +22,7 @@ export default function Navbar() {
 
     return (
         <div
-        className={`flex justify-between m-4 sticky top-0 ${
-          selectedTheme === "light"
-            ? "bg-white backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5"
-            : "bg-slate-950 backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5"
-        }`}
+        className={`flex justify-between m-4 sticky top-0 bg-white backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5 dark:bg-black dark:bg-opacity-50 z-50`}
       >            
             <Link legacyBehavior href="/" onClick={() => router.push('/')}>
             <div className="text-xl font-bold sm:text-2xl xl:text-3xl cursor-pointer">MHT-CET Counselling</div>
@@ -34,7 +30,16 @@ export default function Navbar() {
         <div className="flex items-center cursor-pointer  ">
           
             <Link href="/" legacyBehavior onClick={() => router.push('/')}>
-            <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Counselling</a>
+            <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>About Us</a>
+            </Link>
+            <Link href="/" legacyBehavior onClick={() => router.push('/')}>
+            <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Testimonials</a>
+            </Link>
+            <Link href="/" legacyBehavior onClick={() => router.push('/')}>
+            <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Pricing</a>
+            </Link>
+            <Link href="/" legacyBehavior onClick={() => router.push('/')}>
+            <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Youtube</a>
             </Link>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>

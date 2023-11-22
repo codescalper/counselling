@@ -45,10 +45,10 @@ export default function ClientHero () {
 
             <div className="space-y-2" >
 
-              <h1 className="selection:bg-purple-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
+              <h1  className="selection:bg-purple-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Find your dream college
-                <span className="selection:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-400 ">
-                   with MHT-CET 
+                <span className="selection:text-white bg-clip-text text-transparent text-gradient ">
+                 with MHT-CET Shala 
                 </span>
                 counselling
               </h1>
@@ -61,7 +61,7 @@ export default function ClientHero () {
 
             <div className="w-full max-w-sm space-y-2 mx-auto">
 
-              <Button  className="bg-white text-gray-900" onClick={handleGetStartedClick}>View Details</Button>
+              <Button data-aos="fade-right"  className="bg-white text-gray-900" onClick={handleGetStartedClick}>View Details</Button>
               <div className="mt-4 mx-auto flex justify-center" >
                 <Confetti active={isConfettiActive} config={confettiConfig} />
               </div>
