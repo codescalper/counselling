@@ -1,6 +1,7 @@
 import AboutUs from '@/components/AboutUs'
 import ClientHero from '@/components/ClientHero'
 import  Navbar from '@/components/Header'
+import Subscribe from '@/components/Subscribe'
 import Youtube from '@/components/Youtube'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -11,6 +12,7 @@ function Home() {
    <Navbar />
    <ClientHero />
    <AboutUs />
+   <Subscribe />
    <Youtube />
    </>
   )

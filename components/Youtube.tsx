@@ -54,7 +54,7 @@
     }, []);
 
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div data-aos="fade-up"  className="container mx-auto px-4 py-8">
         <div className="logo-container" style={{ overflowX: "scroll", scrollBehavior: "smooth", scrollSnapType: "x mandatory" }}>
           {videos.map((video) => (
             <div className="logo" style={{ scrollSnapAlign: "center" }} key={video.id}>
@@ -86,7 +86,7 @@
         transform: translateX(0);
       }
       100% {
-        transform: translateX(calc(-100% * ${videos.length}));
+        transform: translateX(calc(-100% * ${videos.length/2}));
       }
     }
 

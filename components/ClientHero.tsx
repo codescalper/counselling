@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Confetti from "react-dom-confetti";
 import { useTheme } from "next-themes";
-import dynamic from "next/dynamic";
 
-function ClientHero () {
+
+export default function ClientHero () {
   const [isConfettiActive, setIsConfettiActive] = useState(false);
   const { theme } = useTheme();  
 
@@ -43,7 +43,7 @@ function ClientHero () {
 
           <div className="flex flex-col justify-center space-y-4 text-center">
 
-            <div className="space-y-2">
+            <div className="space-y-2" >
 
               <h1 className="selection:bg-purple-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Find your dream college
@@ -61,7 +61,7 @@ function ClientHero () {
 
             <div className="w-full max-w-sm space-y-2 mx-auto">
 
-              <Button className="bg-white text-gray-900" onClick={handleGetStartedClick}>View Details</Button>
+              <Button  className="bg-white text-gray-900" onClick={handleGetStartedClick}>View Details</Button>
               <div className="mt-4 mx-auto flex justify-center" >
                 <Confetti active={isConfettiActive} config={confettiConfig} />
               </div>
@@ -77,4 +77,3 @@ function ClientHero () {
 
 }
 
-export default dynamic (() => Promise.resolve(ClientHero), {ssr: false})
