@@ -15,12 +15,15 @@ export default function Pricing() {
   return (
     <>
       <section
-        className="min-h-screen w-full py-12 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-sky-950 dark:to-blue-950 flex items-center justify-center"
+        className="min-h-screen w-full bg-gradient-to-t from-purple-800 via-zinc-900 to-[#020817] py-12 flex items-center justify-center"
         id="pricing"
       >
         <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 md:gap-8">
-            <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
+          <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2  md:gap-8">
+            <div
+              data-aos="fade-right"
+              className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300"
+            >
               <div>
                 <h3 className="text-2xl font-bold text-zinc-900 text-center">
                   Basic
@@ -111,7 +114,10 @@ export default function Pricing() {
                 </Drawer>
               </div>
             </div>
-            <div className="relative flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-purple-500">
+            <div
+              data-aos="fade-left"
+              className="relative  flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border-[3px] border-red-500"
+            >
               <div className="px-3 py-1 text-sm text-zinc-900 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full inline-block absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Popular
               </div>

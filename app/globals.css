@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 body {
   overflow-x: hidden;
 }
-
 
 @layer base {
   :root {
@@ -30,7 +29,7 @@ body {
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -54,8 +53,25 @@ body {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .text-gradient {
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#6fb5ba,#f17b06,#f10606);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82,
+    #6fb5ba,
+    #f17b06,
+    #f10606
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
@@ -74,7 +90,7 @@ body {
     background-position: 100% 0%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;

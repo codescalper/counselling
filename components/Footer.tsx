@@ -10,7 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 export default function Footer() {
   const router = useRouter();
   const links = [
