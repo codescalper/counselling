@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow-x: hidden;
-}
+
 
 @layer base {
   :root {
@@ -53,10 +51,6 @@ body {
   }
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .text-gradient {
   background: linear-gradient(
     60deg,
@@ -90,6 +84,12 @@ body {
     background-position: 100% 0%;
   }
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 @layer base {
   * {

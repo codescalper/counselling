@@ -40,7 +40,6 @@ export default function Footer() {
   return (
     <>
       <footer
-        data-aos="fade-left"
         className="relative py-12 border-t-2 border-indigo-600 w-full"
       >
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 via-teal-600  to-yellow-600 animate-pulse"></div>
@@ -84,10 +83,7 @@ export default function Footer() {
               <a href="" className="text-gray-500 hover:text-blue-400">
                 <FaTelegram size="1.5em" />
               </a>
-              <a href="" className="text-gray-500 hover:text-blue-800">
-                <FaDiscord size="1.5em" />
-              </a>
-              <a
+             <a
                 href="https://www.youtube.com/@mhtcetshalamayanksingh"
                 className="text-gray-500 hover:text-red-600"
               >

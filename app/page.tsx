@@ -12,7 +12,7 @@ function Home() {
     <>
       <ClientHero />
       <AboutUs />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Pricing />
       <Subscribe />
       <Youtube />
