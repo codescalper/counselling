@@ -43,7 +43,7 @@ export default function Testimonials() {
                 delay: 2000,
               }),
             ]}
-            className="w-[95%] max-sm:w-[90%] max-xsm:w-[85%]"
+            className="w-full max-w-xs "
           >
             <CarouselContent>
               {imageNumbers.map((num) => (

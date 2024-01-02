@@ -32,7 +32,7 @@ export default function ClientHero() {
 
   return (
     <section
-      className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48"
+      className="flex items-center justify-center w-full animate-delay-100 h-screen py-12 md:py-24 lg:py-32 xl:py-48"
       id="top"
     >
       <div className="container px-4 md:px-6">
