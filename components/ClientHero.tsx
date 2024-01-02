@@ -1,16 +1,14 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Confetti from "react-dom-confetti";
 import { useTheme } from "next-themes";
 
-
-export default function ClientHero () {
+export default function ClientHero() {
   const [isConfettiActive, setIsConfettiActive] = useState(false);
-  const { theme } = useTheme();  
+  const { theme } = useTheme();
 
-  console.log(theme)
-
+  console.log(theme);
 
   const confettiConfig = {
     angle: 90,
@@ -26,54 +24,54 @@ export default function ClientHero () {
   };
 
   const handleGetStartedClick = () => {
-
-    setIsConfettiActive(true);  
+    setIsConfettiActive(true);
     setTimeout(() => {
       setIsConfettiActive(false);
-    }, 100);  
-   
+    }, 100);
   };
 
-
   return (
-    <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48">
+    <section
+      className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48"
+      id="top"
+    >
       <div className="container px-4 md:px-6">
-
         <div className="grid gap-6 items-center">
-
           <div className="flex flex-col justify-center space-y-4 text-center">
-
-            <div className="space-y-2" >
-
-              <h1  className="selection:bg-purple-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
+            <div className="space-y-2">
+              <h1 className="selection:bg-purple-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Find your dream college
                 <span className="selection:text-white bg-clip-text text-transparent text-gradient ">
-                 with MHT-CET Shala 
+                   with MHT-CET Shala 
                 </span>
                 counselling
               </h1>
 
               <p className="selection:bg-lime-400 font-bold selection:text-black max-w-[750px] md:text-2xl mx-auto ">
-              Get <span className=" text-yellow-500">personalized guidance</span> and expert advice based on your <span className="text-red-500">MHT-CET percentile</span> and preferences. Explore the best colleges and courses for you and <span className="text-yellow-500">secure</span> your admission. 
+                Get{" "}
+                <span className=" text-yellow-500">personalized guidance</span>{" "}
+                and expert advice based on your{" "}
+                <span className="text-red-500">MHT-CET percentile</span> and
+                preferences. Explore the best colleges and courses for you and{" "}
+                <span className="text-yellow-500">secure</span> your admission.
               </p>
-
             </div>
 
             <div className="w-full max-w-sm space-y-2 mx-auto">
-
-              <Button data-aos="fade-right"  className="bg-white text-gray-900" onClick={handleGetStartedClick}>View Details</Button>
-              <div className="mt-4 mx-auto flex justify-center" >
+              <Button
+                data-aos="fade-right"
+                className="bg-white text-gray-900"
+                onClick={handleGetStartedClick}
+              >
+                View Details
+              </Button>
+              <div className="mt-4 mx-auto flex justify-center">
                 <Confetti active={isConfettiActive} config={confettiConfig} />
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
-
 }
-
