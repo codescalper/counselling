@@ -4,7 +4,7 @@ import {FaYoutube } from "react-icons/fa";
 
 const Subscribe = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-24 h-screen flex flex-col md:flex-row justify-center md:justify-between items-center">
+    <div className="px-4 bg-gradient-to-b  from-[#6821a3] to-[#020817]  md:px-8 lg:px-16 xl:px-24 h-screen flex flex-col md:flex-row justify-center md:justify-between items-center">
       <div data-aos="fade-right" className="text-center md:text-left">
         <h1  className="text-4xl  font-bold tracking-tighter sm:text-4xl xl:text-6xl mt-0 pt-0 selection:bg-red-400">
           Watch our <span className="bg-clip-text selection:text-white text-transparent bg-gradient-to-r from-red-600 to-rose-600">College Review videos</span>

@@ -15,15 +15,17 @@ import Image from 'next/image'
 export default function Pricing() {
   return (
     <>
+     <h1 data-aos="fade-up" className="text-center  font-bold xl:text-7xl md:text-4xl text-3xl underline text-gradient2">Pricing</h1>
       <section
         className="min-h-screen w-full bg-gradient-to-t from-purple-800 via-zinc-900 to-[#020817] py-12 flex items-center justify-center"
         id="pricing"
       >
+       
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2  md:gap-8">
             <div
               data-aos="fade-right"
-              className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300"
+              className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-800"
             >
               <div>
                 <h3 className="text-2xl font-bold text-zinc-900 text-center">
@@ -136,7 +138,7 @@ export default function Pricing() {
               data-aos="fade-left"
               className="relative  flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border-[3px] border-red-500"
             >
-              <div className="px-3 py-1 text-sm text-zinc-900 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full inline-block absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="px-3 py-1 text-sm font-bold  text-zinc-800 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full inline-block absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Popular
               </div>
               <div>

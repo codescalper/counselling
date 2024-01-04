@@ -21,8 +21,8 @@ export default function Navbar(this: any) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0  border-gray-200 dark:bg-gray-900 z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-transparent border-b border-gray-800  backdrop-blur-md z-50">
+      <div className="sticky top-0  max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <ScrollLink
           to="top"
           smooth={true}
@@ -67,11 +67,11 @@ export default function Navbar(this: any) {
           </svg>
         </button>
         <div
-          className={`hidden md:block ${isOpen ? "block" : "hidden"}`}
+          className={`md:block ${isOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg justify-center sm:justify-end md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:backdrop-blur-md ">
+              <li>
               <ScrollLink
                 to="about-us"
                 smooth={true}
@@ -143,25 +143,7 @@ export default function Navbar(this: any) {
                 </Link>
               </ScrollLink>
             </li>
-            <li>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="icon">
-                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                    <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                    <span className="sr-only">Toggle theme</span>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => setTheme("light")}>
-                    Light
-                  </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setTheme("dark")}>
-                    Dark
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </li>
+           
           </ul>
         </div>
       </div>

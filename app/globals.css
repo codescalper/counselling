@@ -54,19 +54,31 @@
 .text-gradient {
   background: linear-gradient(
     60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82,
-    #6fb5ba,
-    #f17b06,
-    #f10606
-  );
-  -webkit-background-clip: text;
+    #5dade2,
+    #3498db,
+    #2bdfe5,
+    #00ddff,
+    #066bae,
+    #0088ff,
+    #4444ad,
+    #2813e8b2
+    );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: animationGradient 3s ease alternate infinite;
+}
+
+.text-gradient2 {
+  background: linear-gradient(
+    60deg,
+    #e10808,
+    #ff0202,
+    #e5155a,
+    #ff4081,
+    #ff00bf
+    );
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
   animation: animationGradient 3s ease alternate infinite;

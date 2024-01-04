@@ -43,19 +43,19 @@ export default function Testimonials() {
                 delay: 2000,
               }),
             ]}
-            className="w-full max-w-xs "
+            className=" item-center w-1/2 lg:w-full xl:w-full"
           >
             <CarouselContent>
               {imageNumbers.map((num) => (
                 <CarouselItem key={num} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4">
                     <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
+                      <CardContent className="flex  items-center justify-center p-6">
                         <Image
                           src={`/comments/${num}.png`}
                           alt={`Comment ${num}`}
-                          width={500}
-                          height={300}
+                          width={800}
+                          height={800}
                         />
                       </CardContent>
                     </Card>
