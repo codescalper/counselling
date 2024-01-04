@@ -10,6 +10,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import Image from 'next/image'
 
 export default function Pricing() {
   return (
@@ -98,18 +99,35 @@ export default function Pricing() {
                     <Button className="w-[100%]">Pay</Button>
                   </DrawerTrigger>
                   <DrawerContent>
+                  <div className="mx-auto w-full max-w-sm">
                     <DrawerHeader>
-                      <DrawerTitle>Are you sure absolutely sure?</DrawerTitle>
-                      <DrawerDescription>
-                        This action cannot be undone.
+                    <div className="p-4 pb-0">
+                     <div className="flex flex-col items-center justify-center space-x-2">
+                      <DrawerTitle className=''>Pay with GPay</DrawerTitle>
+                      <DrawerDescription className="text-center pt-5">
+                      Scan this QR code to make a payment for personalized counselling.🚀
                       </DrawerDescription>
+                      <DrawerDescription className="text-center pt-5">
+                      <Image
+                       className="shadow-md shadow-blue-900"
+                        src="/299.png"
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                      />
+                      </DrawerDescription>
+                      <DrawerDescription className="text-center pt-5">
+                      Please add your phone number and email ID in the note while making the payment.                      </DrawerDescription>
+                      </div>
+                      </div>
                     </DrawerHeader>
                     <DrawerFooter>
-                      <Button>Submit</Button>
+                      <Button  className="text-white">See you then 🚀.</Button>
                       <DrawerClose>
                         <Button variant="outline">Cancel</Button>
                       </DrawerClose>
                     </DrawerFooter>
+                    </div>
                   </DrawerContent>
                 </Drawer>
               </div>
@@ -215,18 +233,35 @@ export default function Pricing() {
                     </Button>
                   </DrawerTrigger>
                   <DrawerContent>
+                  <div className="mx-auto w-full max-w-sm">
                     <DrawerHeader>
-                      <DrawerTitle>Are you sure absolutely sure?</DrawerTitle>
-                      <DrawerDescription>
-                        This action cannot be undone.
+                    <div className="p-4 pb-0">
+                     <div className="flex flex-col items-center justify-center space-x-2">
+                      <DrawerTitle className=''>Pay with GPay</DrawerTitle>
+                      <DrawerDescription className="text-center pt-5">
+                      Scan this QR code to make a payment for personalized counselling.🚀
                       </DrawerDescription>
+                      <DrawerDescription className="text-center pt-5">
+                      <Image
+                        className="shadow-md shadow-blue-900"
+                        src="/399.png"
+                        width={500}
+                        height={500}
+                        alt="Pro features"
+                      />
+                      </DrawerDescription>
+                      <DrawerDescription className="text-center pt-5">
+                      Please add your phone number and email ID in the note while making the payment.                      </DrawerDescription>
+                      </div>
+                      </div>
                     </DrawerHeader>
                     <DrawerFooter>
-                      <Button>Submit</Button>
+                      <Button  className="text-white">Head start in your engineering degree 🚀.</Button>
                       <DrawerClose>
                         <Button variant="outline">Cancel</Button>
                       </DrawerClose>
                     </DrawerFooter>
+                    </div>
                   </DrawerContent>
                 </Drawer>
               </div>
