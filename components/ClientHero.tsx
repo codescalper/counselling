@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Confetti from "react-dom-confetti";
 import { useTheme } from "next-themes";
+import { SparklesCore } from "./ui/sparkles";
 
 export default function ClientHero() {
   const [isConfettiActive, setIsConfettiActive] = useState(false);
@@ -32,6 +33,16 @@ export default function ClientHero() {
 
   return (
     <div className="relative h-full w-full">
+       <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full z-[-40]"
+          particleColor="#FFFFFF"
+        />     
+
       <section
         className="flex items-center animate-fade-in justify-center w-full animate-delay-100 h-screen py-12 md:py-24 lg:py-32 xl:py-48"
         id="top"

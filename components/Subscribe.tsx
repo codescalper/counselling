@@ -6,17 +6,7 @@ import { SparklesCore } from "./ui/sparkles";
 const Subscribe = () => {
   return (
 <>
-<div className="w-full absolute inset-0 h-screen">   
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />     
-      </div>
+
     <div className="px-4 bg-gradient-to-b  from-[#6821a3] to-[#020817]  md:px-8 lg:px-16 xl:px-24 h-screen flex flex-col md:flex-row justify-center md:justify-between items-center">
        
     
