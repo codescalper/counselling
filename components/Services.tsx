@@ -41,13 +41,13 @@ const json =
 const Services = () => {
   return (
     <div>
-         <h1 data-aos="fade-up" className="text-center  font-bold xl:text-7xl md:text-4xl text-3xl underline text-gradient2">Services</h1>
+         <h1  className="text-center  font-bold xl:text-7xl md:text-4xl text-3xl underline text-gradient2">Services</h1>
       <section
         className="min-h-screen w-full py-12 flex items-center justify-center"
         id="pricing"
       >
        
-        <div className="container px-4 md:px-6 absolute  ">
+        <div className="container px-4 md:px-6  ">
           <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-3 md:gap-8">
             {json.map((item) => (
             
@@ -56,13 +56,11 @@ const Services = () => {
                   <CardTitle className="text-center">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex justify-center">
-                  <img  src={item.imageSrc} alt="image" className="h-32 w-32 lg:h-64 lg:w-64" />
+                  <img  src={item.imageSrc} alt="image" className="h-64 w-64" />
                 </CardContent>
                 <CardDescription>{item.description}</CardDescription>
                 <CardFooter>{item.content}</CardFooter>
               </Card>
-              
-
             ))}
           </div>
           </div>
