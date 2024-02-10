@@ -2,6 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import ClientHero from "@/components/ClientHero";
 import Footer from "@/components/Footer";
 import Pricing from "@/components/Pricing";
+import Services from "@/components/Services";
 import Subscribe from "@/components/Subscribe";
 import Testimonials from "@/components/Testimonials";
 import Youtube from "@/components/Youtube";
@@ -13,6 +14,7 @@ function Home() {
       <ClientHero />
       <AboutUs />
       <Testimonials />
+      <Services />
       <Pricing />
       <Subscribe />
       <Youtube />
